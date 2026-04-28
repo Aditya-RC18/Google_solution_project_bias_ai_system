@@ -25,13 +25,13 @@ venv/
 env/
 fairtrace/backend/venv/
 
-# Python caches / tooling
+# Python tooling
 .pytest_cache/
 .mypy_cache/
 .coverage
 htmlcov/
 
-# SQLite / local DB
+# Local databases
 *.db
 *.sqlite
 *.sqlite3
