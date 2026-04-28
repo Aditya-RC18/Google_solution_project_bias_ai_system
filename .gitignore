@@ -1,0 +1,69 @@
+# =========================
+# ROOT .gitignore for FairTrace
+# =========================
+
+# ---- Secrets / Env ----
+.env
+.env.*
+!.env.example
+
+# Firebase private keys
+serviceAccountKey.json
+*adminsdk*.json
+*firebase*admin*.json
+
+# ---- Python Backend ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+fairtrace/backend/venv/
+
+# Python caches / tooling
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# SQLite / local DB
+*.db
+*.sqlite
+*.sqlite3
+
+# ---- Frontend / Node ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+.out/
+.next/
+coverage/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs ----
+*.log
+
+# ---- Project Specific ----
+fairtrace/frontend/node_modules/
+fairtrace/backend/.env
+fairtrace/backend/serviceAccountKey.json
