@@ -30,6 +30,42 @@ Instead of just generating reports, FairTrace focuses on practical workflows —
 
 ---
 
+## 📊 Sample Dataset
+
+A sample dataset is included in the repository:
+
+```bash
+data/sample_dataset.csv
+```
+
+You can use this file to test the system by uploading it through the application.
+
+### 🧪 What you can test with it:
+
+* Bias detection (Disparate Impact Ratio)
+* Fraud / anomaly patterns
+* Incident creation workflow
+* Dashboard visualizations
+
+---
+
+### 📌 Dataset Parameters
+
+The dataset contains the following fields:
+
+```text
+id        → Unique record identifier  
+gender    → Protected attribute (e.g., Male/Female)  
+age       → Age of the individual  
+decision  → Model/system decision (Approved/Rejected)  
+outcome   → Binary result (1 = positive, 0 = negative)
+```
+
+> ⚠️ This dataset is synthetic and created for demonstration purposes only.
+> It does not contain real user data.
+
+---
+
 ## Tech Stack
 
 ### Frontend
@@ -55,16 +91,9 @@ Instead of just generating reports, FairTrace focuses on practical workflows —
 ```text
 fairtrace/
 ├── backend/
-│   ├── main.py
-│   ├── models.py
-│   ├── database.py
-│   ├── requirements.txt
-│   └── ...
 ├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
+├── data/
+│   └── sample_dataset.csv
 └── README.md
 ```
 
